@@ -38,7 +38,10 @@ button.addEventListener('click', async () => {
         button.disabled = false;
         input.value = '';
         const generatedImage = document.createElement('img');
-        generatedImage.src = '../images/0.png';
+        // Append a timestamp to bypass caching
+        generatedImage.src = `../images/0.png?timestamp=${new Date().getTime()}`;
+        generatedImage.classList.add('mx-auto', 'md:w-1/2', 'lg:w-1/3');
+
         generatedImage.classList.add('mx-auto', 'md:w-1/2', 'lg:w-1/3');
         //const result = document.getElementById('result');
         result.classList.add('my-7');

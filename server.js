@@ -29,7 +29,7 @@ app.use(express.json());
 
 //import fetch from 'node-fetch';
 //import fs from 'node:fs';
-const engineId = 'stable-diffusion-v1-6';
+const engineId = 'stable-diffusion-xl-1024-v1-0';
 const apiHost = process.env.API_HOST ?? 'https://api.stability.ai';
 const apiKey = process.env.API_KEY;
 
